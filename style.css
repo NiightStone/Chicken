@@ -1,0 +1,197 @@
+:root {
+  --dark: #111;
+  --dark-soft: #1c1c1c;
+  --light: #fff;
+  --gold: #c9a36a;
+  --gray: #999;
+  --transition: 0.3s ease;
+  --font-main: 'Poppins', sans-serif;
+}
+body {
+  font-family: var(--font-main);
+  margin: 0;
+}
+
+
+/* ===== CATEGORIES ===== */
+.categories-wrapper {
+  position: relative;
+  font-family: var(--font-main);
+}
+
+.product-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.category-item {
+  position: relative;
+  min-height: 220px;
+  padding: 40px;
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: 100%;
+  background-position: center;
+  transition: background-size 0.5s ease;
+  overflow: hidden;
+}
+
+.category-item:hover {
+  background-size: 110%;
+}
+
+.category-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  transition: 0.4s ease;
+}
+
+.category-item:hover::before {
+  background: rgba(0,0,0,0.25);
+}
+
+.category-item * {
+  position: relative;
+  z-index: 2;
+}
+
+.number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 32px;
+  opacity: 0.7;
+}
+
+.btn-link {
+  margin-top: 8px;
+  color: var(--light);
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block; /* خیلی مهم برای letter-spacing */
+  transition:
+    letter-spacing 0.35s ease,
+    opacity 0.35s ease;
+  letter-spacing: 0;
+}
+
+.category-item:hover .btn-link {
+  letter-spacing: 0.12em; /* فاصله‌ی ظریف و شیک */
+  opacity: 0.9;
+}
+
+.quick-item-link {
+  all: unset;
+  cursor: pointer;
+}
+
+
+/*.btn-link:hover {
+  letter-spacing: normal;   /* مهم */
+  /*opacity: 0.85;*/
+/*}*/
+
+
+/* ===== BACKGROUNDS ===== */
+.bakground-image-1 { background-image: url("imags/Rectangle 16.png"); }
+.bakground-image-2 { background-image: url("imags/Rectangle 14.png"); }
+.bakground-image-3 { background-image: url("imags/Rectangle_18.png"); }
+.bakground-image-4 { background-image: url("imags/Rectangle_17.png"); }
+
+/* ===== QUICK LINKS OVERLAY ===== */
+.quick-links {
+  position: absolute;
+  width: 100%;
+  /*bottom: -30px;*/
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--dark-soft);
+  display: flex;
+  justify-content:center;
+  gap: 90px;
+  align-items: center;
+  padding: 22px 0px;
+  z-index: 10;
+    min-height: 64px;   
+    margin-right: 1px;
+     /* ارتفاع استاندارد */
+}
+
+.quick-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--light);
+  font-size: 14px;
+    font-size: 15px;            /* خواناتر */
+  font-weight: 400;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.icon-contact { background-image: url("imags/Vector (2).png"); }
+.icon-cart { background-image: url("imags/Vector (3).png"); }
+.icon-location { background-image: url("imags/Vector (4).png"); }
+
+.divider {
+  width: 1px;
+  height: 18px;
+  background: rgba(255,255,255,0.25);
+}
+
+/* ===== NEWSLETTER ===== */
+.newsletter {
+  background: url("imags/Rectangle 28.png") center/cover no-repeat;
+  padding: 100px 20px 80px;
+  text-align: center;
+  color: var(--light);
+}
+.newsletter-form input,
+.newsletter-form button {
+  height: 44px;
+  font-family: var(--font-main);
+  font-size: 14px;
+}
+
+.newsletter-form input {
+    width: 400px;
+  text-align: left;        /* 👈 چپ‌چین */
+  padding-left: 16px ;
+  font-family: var(--font-main);
+}
+
+.newsletter-form button {
+  padding: 0 22px;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background: var(--dark);
+  color: var(--gray);
+  font-family: var(--font-main);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 60px 50px;
+  gap: 30px;
+}
+
+.footer-bottom {
+  background: #222;
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+}

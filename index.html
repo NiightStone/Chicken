@@ -1,44 +1,157 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon site web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Lien vers le fichier CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <title>Chicken Food</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- En-tête -->
-    <header>
-        <h1>Mon Site</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- ================= CATEGORIES ================= -->
+<section class="categories-wrapper">
 
-    <!-- Contenu principal -->
-    <main>
-        <section>
-            <h2>Bienvenue</h2>
-            <p>Ceci est la section principale de mon site.</p>
-        </section>
+  <section class="product-categories">
+    <div class="category-item bakground-image-1">
+      <span class="number">01.</span>
+      <h3>Cupcakes</h3>
+      <a href="#" class="btn-link">Voir maintenant</a>
+    </div>
 
-        <section>
-            <h2>Mes services</h2>
-            <p>Description de vos services.</p>
-        </section>
-    </main>
+    <div class="category-item bakground-image-2">
+      <span class="number">02.</span>
+      <h3>Pâtisseries</h3>
+      <a href="#" class="btn-link">Voir maintenant</a>
+    </div>
 
-    <!-- Pied de page -->
-    <footer>
-        <p>© 2025 - Mon Site. Tous droits réservés...</p>
-    </footer>
+    <div class="category-item bakground-image-3">
+      <span class="number">03.</span>
+      <h3>Muffins</h3>
+      <a href="#" class="btn-link">Voir maintenant</a>
+    </div>
+
+    <div class="category-item bakground-image-4">
+      <span class="number">04.</span>
+      <h3>Gaufres</h3>
+      <a href="#" class="btn-link">Voir maintenant</a>
+    </div>
+  </section>
+
+  <!-- ===== QUICK LINKS OVERLAY ===== -->
+ <section class="quick-links">
+
+  <a href="index.html" class="quick-item-link">
+    <div class="quick-item">
+      <span class="icon icon-contact"></span>
+      <span>Contactez-nous</span>
+    </div>
+  </a>
+
+  <span class="divider"></span>
+
+  <a href="index.html" class="quick-item-link">
+    <div class="quick-item">
+      <span class="icon icon-cart"></span>
+      <span>Achat en ligne</span>
+    </div>
+  </a>
+
+  <span class="divider"></span>
+
+  <a href="index.html" class="quick-item-link">
+    <div class="quick-item">
+      <span class="icon icon-location"></span>
+      <span>Adresse du magasin</span>
+    </div>
+  </a>
+
+</section>
+
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter">
+  <h2>Restez en contact et obtenez 10 % de réduction</h2>
+
+  <form class="newsletter-form">
+    <input type="email" placeholder="Entrez votre adresse e-mail" required>
+    <button type="submit">S’abonner</button>
+  </form>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h3>Chicken Food</h3>
+      <div class="social-icons">
+  <a href="#">
+    <img src="imags/Vector (8).png" alt="Facebook">
+  </a>
+  <a href="#">
+    <img src="imags/Vector (7).png" alt="Instagram">
+  </a>
+  <a href="#">
+    <img src="imags/Vector (6).png" alt="Twitter">
+  </a>
+  <a href="#">
+    <img src="imags/Vector (5).png" alt="LinkedIn">
+  </a>
+</div>
+
+    </div>
+
+    <div class="footer-column">
+      <h4>Liens directs</h4>
+      <ul>
+        <li>Accueil</li>
+        <li>Pages</li>
+        <li>Services</li>
+        <li>À propos</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Menu Chicken</h4>
+      <ul>
+        <li>Poulet</li>
+        <li>Poisson</li>
+        <li>Poulet frit</li>
+        <li>Poulet tandoori</li>
+        <li>Poulet au beurre</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Menu Sucré</h4>
+      <ul>
+        <li>Cupcake</li>
+        <li>Macaron</li>
+        <li>Red Velvet</li>
+        <li>Brownie</li>
+        <li>Chocolat</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>Email : sales@gmail.com</p>
+      <p>Téléphone : +9885-65321</p>
+      <p>Adresse : 113, LGK street, Belgique</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2023 – Tous droits réservés
+  </div>
+</footer>
+
 </body>
 </html>
