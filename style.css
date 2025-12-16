@@ -7,13 +7,13 @@
   --transition: 0.3s ease;
   --font-main: 'Poppins', sans-serif;
 }
+
 body {
   font-family: var(--font-main);
   margin: 0;
 }
 
-
-/* ===== CATEGORIES ===== */
+/* ===== CATÉGORIES ===== */
 .categories-wrapper {
   position: relative;
   font-family: var(--font-main);
@@ -72,7 +72,7 @@ body {
   color: var(--light);
   font-size: 14px;
   text-decoration: none;
-  display: inline-block; /* خیلی مهم برای letter-spacing */
+  display: inline-block; /* Très important pour le letter-spacing */
   transition:
     letter-spacing 0.35s ease,
     opacity 0.35s ease;
@@ -80,7 +80,7 @@ body {
 }
 
 .category-item:hover .btn-link {
-  letter-spacing: 0.12em; /* فاصله‌ی ظریف و شیک */
+  letter-spacing: 0.12em; /* Espacement subtil et élégant */
   opacity: 0.9;
 }
 
@@ -89,36 +89,36 @@ body {
   cursor: pointer;
 }
 
+/*
+.btn-link:hover {
+  letter-spacing: normal;   /* Important */
+  /* opacity: 0.85; */
+/*}
+*/
 
-/*.btn-link:hover {
-  letter-spacing: normal;   /* مهم */
-  /*opacity: 0.85;*/
-/*}*/
-
-
-/* ===== BACKGROUNDS ===== */
+/* ===== ARRIÈRE-PLANS ===== */
 .bakground-image-1 { background-image: url("imags/Rectangle 16.png"); }
 .bakground-image-2 { background-image: url("imags/Rectangle 14.png"); }
 .bakground-image-3 { background-image: url("imags/Rectangle_18.png"); }
 .bakground-image-4 { background-image: url("imags/Rectangle_17.png"); }
 
-/* ===== QUICK LINKS OVERLAY ===== */
+/* ===== SUPERPOSITION DES LIENS RAPIDES ===== */
 .quick-links {
   position: absolute;
   width: 100%;
-  /*bottom: -30px;*/
+  /* bottom: -30px; */
   left: 50%;
   transform: translateX(-50%);
   background: var(--dark-soft);
   display: flex;
-  justify-content:center;
+  justify-content: center;
   gap: 90px;
   align-items: center;
   padding: 22px 0px;
   z-index: 10;
-    min-height: 64px;   
-    margin-right: 1px;
-     /* ارتفاع استاندارد */
+  min-height: 64px;
+  margin-right: 1px;
+  /* Hauteur standard */
 }
 
 .quick-item {
@@ -127,7 +127,7 @@ body {
   gap: 14px;
   color: var(--light);
   font-size: 14px;
-    font-size: 15px;            /* خواناتر */
+  font-size: 15px; /* Plus lisible */
   font-weight: 400;
 }
 
@@ -138,7 +138,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 .icon-contact { background-image: url("imags/Vector (2).png"); }
 .icon-cart { background-image: url("imags/Vector (3).png"); }
@@ -157,6 +156,7 @@ body {
   text-align: center;
   color: var(--light);
 }
+
 .newsletter-form input,
 .newsletter-form button {
   height: 44px;
@@ -165,9 +165,9 @@ body {
 }
 
 .newsletter-form input {
-    width: 400px;
-  text-align: left;        /* 👈 چپ‌چین */
-  padding-left: 16px ;
+  width: 400px;
+  text-align: left; /* Alignement à gauche */
+  padding-left: 16px;
   font-family: var(--font-main);
 }
 
@@ -175,7 +175,7 @@ body {
   padding: 0 22px;
 }
 
-/* ===== FOOTER ===== */
+/* ===== PIED DE PAGE ===== */
 .site-footer {
   background: var(--dark);
   color: var(--gray);
